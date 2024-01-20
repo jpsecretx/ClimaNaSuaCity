@@ -1,0 +1,150 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;500;600;700&family=Open+Sans&family=Poppins:ital,wght@0,100;0,300;0,900;1,100;1,200;1,400&display=swap");
+
+* {
+  font-family: "Poppins", sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  background: linear-gradient(#5b5b5b, #cecece);
+}
+
+#container {
+  background-color: #f0f8ff;
+  border-radius: 20px;
+  padding: 18px;
+  box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.1);
+}
+
+#busca {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  border: 1px solid #bdbdbd;
+  border-radius: 10px;
+  padding: 4px 12px;
+}
+
+#busca input {
+  border: none;
+  background-color: transparent;
+  font-size: 16px;
+  width: 100%;
+}
+
+#busca input:focus-visible {
+  outline: none;
+}
+
+#busca button {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+}
+
+#clima {
+  display: none;
+  margin-top: 20px;
+}
+
+#clima.show {
+    display: block;
+}
+#clima #titulo {
+  text-align: center;
+  margin-bottom: 5px;
+  font-weight: 600;
+  color: #000000;
+}
+
+#temp {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    gap: 20px;
+    background: linear-gradient(90deg,#5a7cdc, #606dde );
+    color: #fff;
+    border-radius: 20px;
+    padding: 20px;
+}
+
+#tempo_img {
+    filter: drop-shadow(2px 2px 2px rgba(0,0,0,0.2));
+}
+
+#tempo_valor {
+
+    font-size: 50px;
+    line-height: 55px;
+
+}
+#tempo_descricao {
+    font-weight: 500;
+    text-transform: capitalize;
+
+}
+
+#outras_infos {
+    margin-top: 30px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 12px;
+
+}
+
+#outras_infos .info{
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    padding: 4px 10px;
+    border-radius: 8px;
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.2);
+    background-color: #fff;
+    gap: 10px;
+
+}
+
+#outras_infos .info h2{
+    font-size: 12px;
+    font-weight: 500;
+
+}
+
+#outras_infos .info i {
+    font-size: 20px;
+    width: 20%;
+}
+
+#temp_max_icon {
+    color: #7f1d1d;
+}
+
+#temp_min_icon {
+    color: #0284c7;
+}
+
+#humidade_icon {
+    color: #0ea5e9;
+}
+
+#vento_icon {
+    color: #7c3aed;
+}
+
+#alerta {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#alerta img{  
+  width: 200px;
+  margin-top: 20px;
+
+}
